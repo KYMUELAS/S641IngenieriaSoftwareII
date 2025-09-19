@@ -16,7 +16,14 @@ public class Reader {
         converter.makeLine();
         break;
         case "PRAGRAPH":
-
+                converter.makeParagraph();
+                break;
+            case "TABLE":
+                converter.makeTable();
+                break;        
+            default:
+                System.out.println("Opción no válida");
+                break;
 
     }
     }

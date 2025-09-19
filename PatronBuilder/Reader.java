@@ -1,31 +1,31 @@
 public class Reader {
 
-    private String element; 
-    private Converter converter; 
+    private String element;
+    private Converter converter;
 
-    public Reader (String element, Converter converter) {
+    public Reader(String element, Converter converter) {
         this.element = element;
-        this.converter = converter; 
+        this.converter = converter;
     }
-    
-    //Metodos
-    public void parseInput(){
-            switch (element){
-                
-        case "line":
-        converter.makeLine();
-        break;
-        case "PRAGRAPH":
+
+    // Metodos
+    public void parseInput() {
+        switch (element) {
+
+            case "line":
+                converter.makeLine();
+                break;
+            case "PRAGRAPH":
                 converter.makeParagraph();
                 break;
             case "TABLE":
                 converter.makeTable();
-                break;        
+                break;
             default:
                 System.out.println("Opción no válida");
                 break;
 
-    }
+        }
     }
 
 }

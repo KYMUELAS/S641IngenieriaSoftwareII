@@ -4,7 +4,7 @@ public class ASCIIConverter extends Converter {
     System.out.println("Linea con ASCII");
    }
    public void makeParagraph(){
-    System.out.println("Parrafo con ASCII");
+    System.out.println("Parrafo con ASCII")
    }
    public void makeTable(){
     System.out.println("Tabla con ASCII");
